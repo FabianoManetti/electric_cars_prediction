@@ -170,7 +170,7 @@ predictor** for `Consumption`.
 
 <center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-16.png"></center><br>
 
-<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-17.png"></center><br> 
+<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-18.png"></center><br> 
 
 Both features seem to have **good positive correlation with
 `Consumption`**. Nevertheless it’s important to consider a
@@ -179,7 +179,7 @@ essencially the same result.
 
 * Relation between `Consumption` and `Boot_Capacity`
 
-<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-18.png"></center><br>
+<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-17.png"></center><br>
 
 Once again, it’s possible to affirm that **the higher the
 `Boot_Capacity`, the higher the car `Consumption`**.
