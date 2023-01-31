@@ -192,3 +192,82 @@ Although the feature has apperentaly **good positive correlation with
 `Consumption`**, it’s important to extend our study on this variable,
 specially comparing it to `Battery_Capacity` in order to avoid eventual
 interference in the quality of our prediction model.
+
+* Histogram + Boxplot of `Consumption`
+
+<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-27-1.png"></center><br>
+
+The histogram of `Consumption` indicates that this features **does not
+follow a normal distribution**. The bulk of data are concentrated on
+**smaller values of `Consumption`**, even though both, histogram and
+boxplot, shows a distortion towards highest values.
+
+## Splitting data
+
+From our exploratory analysis, we decided to choose the following
+features as input to our regression prediction model: `Power`, `Torque`,
+`Drive_Type`, `Battery_Capacity`, `Gross_Weight`, `Load_Capacity`,
+`Tire_Size`, `Max_Speed` and `Boot_Capacity`. As we previously
+concluded, the other features either have multicollinearity or were
+already represented by the chosen ones.
+
+## Standardizing data
+
+Before the process of training we need to perform stardardization of the
+features, so that we **prevent features with wider ranges from
+dominating others**. For this purpose, we’ll take the mean and standard
+deviation from the training set and use them to stardardize both, the
+training and test set.
+
+## Choosing and training models
+
+For our regression project, we decided to test the following machine
+learning models: **Linear Regression**, **Ridge Regression**, **Random
+Forest** and **XGBoost**.
+
+For our first running, we will consider all the previously selected
+features, which will trained across a 5-fold-cross validation method (in
+order to avoid randomness of evaluation).
+
+## Evaluating models
+
+Our main objective for this project is to deliver a model that will be
+used to predict the Energy Consumption of electrical cars.
+
+In this case, we are concerned in reducing the error of our model. Three
+metrics will be used to evaluate the result: **R²** or coefficient of
+determination, which is the proportion of the variance for a dependent
+variable that is explained by independend variables; **MAE** or mean
+absolute error, which is the average absolute error between actual and
+predicted values; **RMSE** or root mean square error, which is the
+starndard deviation of the residuals (prediction errors).
+
+All the models tested presented similar values for R² metric, while
+XGBoost and Random Forest showed slight better values for RMSE and MAE
+metrics, for the test set. However, when looking at the training results
+we see that Randon Forest model didn’t present the same performance.
+Ridge Regression was able to perform better for the training set but
+didn’t improve the results for the test set compared to Linear
+Regression not regularized. As for XGBoost, it did achieve a set of
+parameters that elevated the performance for the training and test set.
+XGBoost requires, however, more computational power and brings
+complexity to the model; Linear Regression model, on the other hand, is
+a simpler and faster algorithm that showed good performance and
+consistence for our dataset, this is why we decided to follow with the
+**Linear Regression** model.
+
+## Ranking features by importance
+
+<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-44-1.png"></center><br>
+
+As we can see, the feature `Boot_Capacity` seems to have a smaller
+effect on the prediction model. For this reason, we will not consider it
+in our final model.
+
+## Optmizing model
+
+We were able to keep up our performance while we reduced dimensionality
+of the final model.
+
+# Second Analysis: Inputting missing values
+
