@@ -125,7 +125,13 @@ and the car `Consumption`**.
 * Relation between `Consumption`, `Wheelbase`, `Length`, `Width` and
   `Height`
   
-<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-6.png"></center><br> 
+<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-6.png"></center><br>
+
+<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-7.png"></center><br> 
+
+<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-8.png"></center><br> 
+
+<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-9.png"></center><br> 
  
  It seems that, related to the car dimensions, **the higher that
 dimension, the higher the car `Consumption` (except for the feature
@@ -133,7 +139,9 @@ dimension, the higher the car `Consumption` (except for the feature
 
 * Relation between `Consumption`, `Minimal_Weight` and `Gross_Weight`
 
-<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-7.png"></center><br>
+<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-10.png"></center><br>
+
+<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-11.png"></center><br> 
 
 As expected, **higher values of `Weight` are associated to higher
 `Consumption`**. Both graph plots have similar behavior, for this reason
@@ -142,21 +150,27 @@ dimensions, will be examined later.
 
 * Relation between `Consumption` and `Load_Capacity`
 
-<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-8.png"></center><br>
+<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-12.png"></center><br>
 
 Once again, we observe a **positive correlation** between the
 `Load_Capacity` of a car and its `Consumption`.
 
 * Relation between `Consumption`, `Seats`, `Doors` and `Tire_Size`
 
-<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-9.png"></center><br>
+<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-13.png"></center><br>
+
+<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-14.png"></center><br> 
+
+<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-15.png"></center><br> 
 
 Among these three features, only `Tire_Size` **might be a good
 predictor** for `Consumption`.
 
 * Relation between `Consumption`, `Max_Speed` and `Acceleration`
 
-<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-10.png"></center><br>
+<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-16.png"></center><br>
+
+<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-17.png"></center><br> 
 
 Both features seem to have **good positive correlation with
 `Consumption`**. Nevertheless it’s important to consider a
@@ -165,14 +179,14 @@ essencially the same result.
 
 * Relation between `Consumption` and `Boot_Capacity`
 
-<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-11.png"></center><br>
+<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-18.png"></center><br>
 
 Once again, it’s possible to affirm that **the higher the
 `Boot_Capacity`, the higher the car `Consumption`**.
 
 * Relation between `Consumption` and `Maximum_DC_Charging Power`
 
-<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-11.png"></center><br>
+<center><img src="electric_cars_prediction_files/figure-gfm/unnamed-chunk-22-19.png"></center><br>
 
 Although the feature has apperentaly **good positive correlation with
 `Consumption`**, it’s important to extend our study on this variable,
