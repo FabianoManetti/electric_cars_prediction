@@ -45,11 +45,11 @@ electric passenger cars collected on specialized websites in Poland.
 # 3. Setting working directory
 
 ``` r
-setwd("C:/Users/fabia/OneDrive/Área de Trabalho/Arquivos/Data_Science/DSA/Big_Data_R_Azure/electric_cars_prediction")
+setwd("C:/Users/fabiano/OneDrive/Área de Trabalho/Arquivos/Data_Science/DSA/Big_Data_R_Azure/electric_cars_prediction")
 getwd()
 ```
 
-    ## [1] "C:/Users/fabia/OneDrive/Área de Trabalho/Arquivos/Data_Science/DSA/Big_Data_R_Azure/electric_cars_prediction"
+    ## [1] "C:/Users/fabiano/OneDrive/Área de Trabalho/Arquivos/Data_Science/DSA/Big_Data_R_Azure/electric_cars_prediction"
 
 # 4. Importing libraries
 
